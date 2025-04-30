@@ -1,0 +1,1 @@
+export const WEEKDAYS = ["M","T","W", "..."]

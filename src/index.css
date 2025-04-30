@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary-blue: #0077b6;
+  --color-primary-blue: #05629b;
+  --color-secondary-gray: #d9d9d940;
+  --color-sec-blue: #084870;
+  --color-accent-1: #d9d9d966;
+  --breakpoint-xs: 420px;
+}
+
+.btn-xx {
+  @apply bg-secondary-blue rounded-[7px] text-white font-semibold px-2 sm:py-1 py-[2px];
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  @apply sm:text-[14.5px] text-[14px];
+}
+
+.word-spacing-custom {
+  word-spacing: 0.1rem;
+}
+
+.autoDisplay {
+  animation: autoDisplay both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes autoDisplay {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
