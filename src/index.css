@@ -23,6 +23,14 @@ body {
   word-spacing: 0.1rem;
 }
 
+.hero {
+  background: url("/public/img/blackDoc.jpg"), linear-gradient(white, grey);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .autoDisplay {
   animation: autoDisplay both;
   animation-timeline: view(70% 5%);
