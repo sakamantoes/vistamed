@@ -134,7 +134,7 @@ function UnAuthNav() {
           isOpen={isOpen}
           setSheetState={setSheetState}
           className={
-            "bg-white sm:hidden flex flex-col items-center pt-10 font-semibold text-[20px]"
+            "bg-white sm:hidden flex flex-col items-center pt-10 font-semibold text-[20px] z-50"
           }
         >
           <div className="px-1">

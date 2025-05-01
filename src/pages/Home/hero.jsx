@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
   return (
     <div>
-      <div className="py-2 px-7 -z-10 bg-primary-blue md:h-[90vh] h-[60vh] flex items-center justify-center hero">
+      <div className="py-2 px-7 -z-10 bg-primary-blue md:h-[90vh] h-[60vh] flex items-center justify-center hero -z-10">
         <div className="flex items-center justify-center flex-col md:leading-9 ">
           <h1 className="text-primary-blue text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold  max-sm:text-center">
             Smart Health Data Platform
