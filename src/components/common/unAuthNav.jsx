@@ -52,7 +52,7 @@ function UnAuthNav() {
   const [isOpen, setSheetState] = useState(false);
 
   return (
-    <div className="h-[60px] fixed w-full bg-white/70 backdrop  mx-auto flex items-center justify-between md:px-10 px-4 overflow-hidden z-20">
+    <div className="h-[60px] fixed w-full bg-white/60 backdrop-blur-md  mx-auto flex items-center justify-between md:px-10 px-4 overflow-hidden z-20">
       <div className="">
         <img
           src="/img/logo.png"

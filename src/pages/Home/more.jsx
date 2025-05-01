@@ -35,7 +35,7 @@ const moreData = [
 
 function More() {
   return (
-    <div className="py-10 flex justify-center items-center flex-col">
+    <div className="py-10 flex justify-center items-center flex-col my-10 ">
       <h1 className="text-center text-2xl font-bold text-sec-blue mb-3.5 ">
         Key Features
       </h1>
@@ -43,7 +43,7 @@ function More() {
         {moreData.map(({ title, body, src }, i) => (
           <div
             key={i}
-            className=" bg-secondary-gray w-[280px] md:w-[300px] h-[170px] rounded-md flex items-center justify-start flex-row py-3 px-2 hover:translate-y-[-10px] transition-all duration-500 autoDisplay"
+            className=" bg-secondary-gray w-[280px] md:w-[300px] h-[170px] rounded-md flex items-center gap-1.5 justify-start flex-row py-3 px-2 hover:translate-y-[-10px] transition-all duration-500 autoDisplay"
           >
             <div className="w-1/2">
               <h1 className="capitalized text-primary-blue font-bold text-[20px]">

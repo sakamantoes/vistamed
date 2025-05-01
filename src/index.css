@@ -24,11 +24,29 @@ body {
 }
 
 .hero {
-  background: url("/public/img/blackDoc.jpg"), linear-gradient(white, grey);
+  position: relative;
+  background: url("/public/img/blackDoc.jpg"), linear-gradient(black, black);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  z-index: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2; /* Ensure content is above overlay */
 }
 
 .autoDisplay {
