@@ -52,7 +52,7 @@ function UnAuthNav() {
   const [isOpen, setSheetState] = useState(false);
 
   return (
-    <div className="h-[60px] fixed w-full bg-white/60 backdrop-blur-md  mx-auto flex items-center justify-between md:px-10 px-4 overflow-hidden z-20">
+    <div className="h-[60px] fixed w-full bg-white backdrop-blur-md  mx-auto flex items-center justify-between md:px-10 px-4 overflow-hidde z-[40]">
       <div className="">
         <img
           src="/img/logo.png"
@@ -69,7 +69,9 @@ function UnAuthNav() {
               key={i}
               DropdownTitle={
                 <li className="inline-flex items-center gap-1 group hover:bg-secondary-blue/10  px-1 py-1 rounded-[7px]">
-                  <Link to={to}>{title}</Link>
+                  <Link to={to} className="capitalize">
+                    {title}
+                  </Link>
 
                   <svg
                     className="w-2 h-2 group-hover:rotate-[180deg] transition-all duration-500"
@@ -87,13 +89,15 @@ function UnAuthNav() {
                 </li>
               }
               DropdownMenu={
-                <ul className="bg-white/50 shadow translate-y-[6px] backdrop-blur-md backdrop-saturate-200 rounded-md px-2 space-y-1 py-2">
+                <ul className="bg-white/80 shadow translate-y-[6px] backdrop-blur-md backdrop-saturate-200 rounded-md px-2 space-y-1 py-2">
                   {isDropDown.map(({ to, title }, i) => (
                     <li
                       key={i}
                       className="py-1 text-[13px] hover:bg-secondary-blue/10 px-1 rounded-md"
                     >
-                      <Link to={to}>{title}</Link>
+                      <Link to={to} className="capitalize">
+                        {title}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -126,7 +130,7 @@ function UnAuthNav() {
       </ul>
 
       <div className="flex items-center gap-3">
-        <Link to="/auth/register" className="xs:block btn-xx hidden">
+        <Link to="/auth" className="xs:block btn-xx hidden">
           Get Started
         </Link>
 
@@ -134,7 +138,7 @@ function UnAuthNav() {
           isOpen={isOpen}
           setSheetState={setSheetState}
           className={
-            "bg-white sm:hidden flex flex-col items-center pt-10 font-semibold text-[20px] z-50"
+            "bg-white h-full sm:hidden flex flex-col items-center pt-10 font-semibold text-[20px] z-50"
           }
         >
           <div className="px-1">

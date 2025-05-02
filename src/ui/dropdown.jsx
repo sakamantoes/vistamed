@@ -8,10 +8,10 @@ function Dropdown({
 }) {
   const [dropdownToggle, setDropDownToggle] = useState(false);
   return (
-    <div className={`relative ${type == "hover" ? "group" : ""}`}>
+    <div className={`${type == "hover" ? "group" : ""}`}>
       {dropdownToggle && (
         <div
-          className="fixed z-[1] inset-0"
+          className="absolute w-[100vw] h-[100vh] left-0 inset-0"
           onClick={
             type == "click"
               ? () => setDropDownToggle(!dropdownToggle)
@@ -31,7 +31,7 @@ function Dropdown({
       <div
         data-active={dropdownToggle}
         className={`
-        fixed z-10
+        fixed z-[10]
         ${
           type == "click"
             ? dropdownToggle

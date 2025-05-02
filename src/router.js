@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router";
 import Home from "./pages/Home";
 import { DefaultLayout } from "./layout/default";
-import AuthLayout from "./layout/authLayout";
 import DashboardHome from "./pages/dashboard/dashboardHome";
+import LoginAs from "./pages/auth/loginAs";
+import Login from "./pages/auth/login";
+import Register from "./pages/auth/register";
 
 const router = createBrowserRouter([
   {
@@ -15,23 +17,22 @@ const router = createBrowserRouter([
       },
     ],
   },
-  // {
-  //   path: "/auth",
-  //   children: [
-  //     {
-  //       index: true,
-  //       Component: AuthIndex
-  //     },
-  //     {
-  //       path: "login",
-  //       Component: Home,
-  //     },
-  //   ],
-  // },
   {
-    path: "/dashboard",
-    Component: AuthLayout,
-    children: [{ index: true, Component: DashboardHome }],
+    path: "/auth",
+    children: [
+      {
+        index: true,
+        Component: LoginAs,
+      },
+      {
+        path: "login",
+        Component: Login,
+      },
+      {
+        path: "register",
+        Component: Register,
+      },
+    ],
   },
 ]);
 

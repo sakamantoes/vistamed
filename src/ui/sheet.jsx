@@ -5,7 +5,7 @@ function Sheet({ isOpen, setSheetState, className, type = "right", children }) {
     <div className="">
       {isOpen && (
         <div
-          className="fixed z-[1] inset-0 bg-black/10 backdrop-blur-[2px] backdrop-saturate-150"
+          className="fixed z-[1] w-screen h-screen inset-0 bg-black/10 backdrop-blur-[2px] backdrop-saturate-150"
           onClick={() => setSheetState(false)}
         ></div>
       )}
@@ -23,7 +23,7 @@ function Sheet({ isOpen, setSheetState, className, type = "right", children }) {
             : type === "left"
             ? "left-[1000px]"
             : ""
-        } max-w-full w-[250px] transition-all duration-500 shadow ${className}`}
+        } max-w-full w-[250px] h-screen  transition-all duration-500 shadow ${className}`}
       >
         {/* Close button */}
         <button onClick={() => setSheetState(false)}>
