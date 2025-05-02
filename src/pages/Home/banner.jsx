@@ -11,7 +11,7 @@ function Banner() {
           <p className="mt-0.2">with 100+ doctors</p>
         </div>
 
-        <Link to="/auth/login?loginAs=patient">
+        <Link to="/auth/register">
           <button className="bg-white text-sm sm:text-base text-gray-600 px-2 py-1 mb-1.5 md:px-8 md:py-3 rounded-full mt-1 hover:scale-105 transition-all duration-500">
             Create Account
           </button>

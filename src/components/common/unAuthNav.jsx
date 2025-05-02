@@ -205,6 +205,9 @@ function UnAuthNav() {
                 )
               )}
             </ul>
+            <Link to="/auth" className="xs:block btn-xx flex mt-4">
+              Get Started
+            </Link>
           </div>
         </Sheet>
         <button

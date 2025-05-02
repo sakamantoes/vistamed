@@ -175,6 +175,9 @@ function AuthNav() {
                 )
               )}
             </ul>
+            <Link to="/auth" className="xs:block btn-xx hidden">
+              Get Started
+            </Link>
           </div>
         </Sheet>
         <button
