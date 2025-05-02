@@ -65,7 +65,6 @@ function LoginAs() {
 
           <div className="flex justify-between gap-3    ">
             <div className="">
-              {" "}
               <Link to="">Privacy</Link>
               <hr />
             </div>

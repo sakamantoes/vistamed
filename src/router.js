@@ -5,6 +5,7 @@ import DashboardHome from "./pages/dashboard/dashboardHome";
 import LoginAs from "./pages/auth/loginAs";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
+import { DoctorForm } from "./components/auth/patientAndDoctor";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "register",
         Component: Register,
+      },
+      {
+        path: "doctorForm",
+        Component: DoctorForm,
       },
     ],
   },

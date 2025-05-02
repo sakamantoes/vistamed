@@ -4,7 +4,7 @@ function Register() {
   return (
     <div className="flex items-center justify-center gap-7 flex-col h-[100vh]">
       <form className="md:w-[500px] gap-7 flex items-center justify-center flex-col">
-        <h1 className="font-bold text-3xl">Create an Account</h1>
+        <h1 className="font-bold text-3xl ">Create an Account</h1>
         <fieldset className="border w-[100%] flex justify-center items-center flex-row py-1.5 ">
           <legend className="mr-5 font-bold pl-1 pr-10">Name Dateils:</legend>
 
