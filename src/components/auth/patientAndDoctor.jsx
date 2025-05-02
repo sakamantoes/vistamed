@@ -116,17 +116,17 @@ export function DoctorForm() {
         </h1>
         <div className="mb-5">
           <h1 className="font-bold">Text ONE</h1>
-          <div className="flex flex-col gap-[1px] my-1">
+          <div className="flex flex-col gap-[1px] my-2">
             <input
               type="text"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
           <div className="flex flex-col gap-[1px]">
             <select
               name=""
               id=""
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             >
               <option value="nurse">nurse</option>
               <option value="doctor">doctor</option>
@@ -134,44 +134,44 @@ export function DoctorForm() {
               <option value="nurse2">nurse2</option>
             </select>
           </div>
-          <div className="flex flex-col gap-[1px] my-1">
+          <div className="flex flex-col gap-[1px] my-2">
             <input
               type="text"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
           <div className="flex flex-col gap-[1px]">
             <input
               type="password"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
-          <div className="flex flex-col gap-[1px] my-1">
+          <div className="flex flex-col gap-[1px] my-2">
             <input
               type="text"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
         </div>
 
         <div className="mb-5">
           <h1 className="font-bold">Text TWO</h1>
-          <div className="flex flex-col gap-[1px] my-1">
+          <div className="flex flex-col gap-[1px] my-2">
             <input
               type="text"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
           <div className="flex flex-col gap-[1px]">
             <input
               type="password"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
-          <div className="flex flex-col gap-[1px] my-1">
+          <div className="flex flex-col gap-[1px] my-2">
             <input
               type="text"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
         </div>
@@ -181,13 +181,13 @@ export function DoctorForm() {
           <div className="flex flex-col gap-[1px]">
             <input
               type="password"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
-          <div className="flex flex-col gap-[1px] my-1">
+          <div className="flex flex-col gap-[1px] my-2">
             <input
               type="text"
-              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-700"
+              className="py-3 px-1.5 rounded-[3PX] bg-gray-300/50 border border-gray-300"
             />
           </div>
         </div>
