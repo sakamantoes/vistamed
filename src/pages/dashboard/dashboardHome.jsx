@@ -1,9 +1,20 @@
 import React from "react";
+import Welcome from "../../components/dashboard/landing/welcome";
+import Appointment from "../../components/dashboard/landing/appointment";
+import HealthMetrics from "../../components/dashboard/landing/healthMetrics";
+import Records from "../../components/dashboard/landing/records";
 
 function DashboardHome() {
   return (
-    <div className="">
-      <div className=""></div>
+    <div className="pt-[60px] bg-gray-300/30 flex flex-col justify-center">
+      <Welcome />
+      <div className="w-[1200px] mx-auto max-w-full px-4 py-4">
+        <div className="">
+          <Appointment />
+          <HealthMetrics />
+          <Records />
+        </div>
+      </div>
     </div>
   );
 }

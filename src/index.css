@@ -8,6 +8,7 @@
   --color-access-2: #f4f6f9;
   --color-accent-1: #d9d9d966;
   --breakpoint-xs: 420px;
+  --color-backForm-gray: #ffffffd6;
 }
 
 .btn-xx {
@@ -15,7 +16,9 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   @apply sm:text-[14.5px] text-[14px];
 }

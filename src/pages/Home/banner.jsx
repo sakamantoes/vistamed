@@ -23,7 +23,7 @@ function Banner() {
         <img
           src="/img/doc2.png"
           alt=""
-          className="w-full absolute bottom-0 right-20 max-w-md"
+          className="w-[250px] absolute bottom-0 right-20 max-w-md"
         />
       </div>
     </div>

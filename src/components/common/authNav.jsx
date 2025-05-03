@@ -52,7 +52,7 @@ function AuthNav() {
   const [isOpen, setSheetState] = useState(false);
 
   return (
-    <div className="h-[60px] fixed border w-full bg-white mx-auto flex items-center justify-between md:px-10 px-4 overflow-hidden z-10">
+    <div className="h-[60px] fixed w-full bg-white mx-auto flex items-center justify-between md:px-21 px-4 overflow-hidden z-10">
       <div className="flex items-center md:gap-5">
         <img
           src="/img/logo.png"
@@ -61,7 +61,7 @@ function AuthNav() {
         />
 
         {/* search input */}
-        <div className="bg-accent-1 relative items-center sm:flex h-7 md:w-[287px] hidden w-[240px]  rounded-xs">
+        <div className="bg-accent-1 relative items-center sm:flex h-7 md:w-[287px] hidden w-[240px] p-4  rounded-xs">
           <svg
             className="absolute w-4 h-4 ml-1"
             viewBox="0 0 28 29"
@@ -102,7 +102,9 @@ function AuthNav() {
           </svg>
         </Link>
 
-        <div className="w-8 h-8 rounded-full bg-gray-100 overflow-hidden"></div>
+        <div className="w-8 h-8 rounded-full overflow-hidden">
+          <img src="/img/user2.png" alt="" />
+        </div>
 
         <Sheet
           isOpen={isOpen}

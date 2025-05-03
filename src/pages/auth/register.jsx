@@ -1,14 +1,17 @@
 import React from "react";
+import { Link } from "react-router";
 
 function Register() {
   return (
-    <div className="flex items-center justify-center gap-7 flex-col">
+    <div className="flex items-center justify-center gap-7 flex-col bg-gray-100 py-4">
       <div>
         {" "}
-        <form className=" gap-7 flex flex-col w-[100%]">
+        <form className=" gap-7 flex flex-col w-[100%] shadow-2xl px-5 py-3 rounded-sm">
           <h1 className="font-bold text-3xl text-center">Create an Account</h1>
-          <fieldset className="border w-[400px] flex justify-evenly items-center flex-col md:flex-row py-8 px-2 gap-5 ">
-            <legend className="mr-5 font-bold pl-1 pr-10">Name Dateils:</legend>
+          <fieldset className="border w-[400px] flex justify-evenly items-center flex-col text-2xl-col md:flex-row py-8 px-2 gap-5 ">
+            <legend className="mr-5 font-bold pl-1 text-2xl pr-10">
+              Name Datails:
+            </legend>
 
             <select
               name="Title"
@@ -39,10 +42,9 @@ function Register() {
               className="border w-full md:w-[150px] p-2"
             />
           </fieldset>
-
           <fieldset className="border w-[400px] flex justify-evenly items-center flex-col md:flex-row py-8 px-2 gap-5 ">
-            <legend className="mr-5 font-bold pl-1 pr-10">
-              Address Dateils:
+            <legend className="mr-5 font-bold text-2xl pl-1 pr-10">
+              Address Datails:
             </legend>
             <select
               name="Title"
@@ -89,10 +91,9 @@ function Register() {
               className="border w-full md:w-[150px] p-2"
             />
           </fieldset>
-
           <fieldset className="border w-[400px] md:w-[680px] grid md:grid-cols-3 py-8 px-2 gap-5">
-            <legend className="mr-5 font-bold pl-1 pr-10">
-              Personal Dateils:
+            <legend className="mr-5 font-bold text-2xl pl-1 pr-10">
+              Personal Datails:
             </legend>
             <input
               type="text"
@@ -139,7 +140,6 @@ function Register() {
               className="border w-full md:w-[300px] p-2"
             />
           </fieldset>
-
           <div className="flex flex-col gap-1">
             <div className="flex ">
               <input
@@ -156,10 +156,16 @@ function Register() {
               <p>Accept our Terms & Conditions</p>
             </div>
           </div>
-
           <button className="bg-primary-blue text-white w-[140px] py-2 mx-auto">
             Sign Up
           </button>
+
+          <p>
+            Already have an Account?{" "}
+            <Link to="" className="ml-3 text-primary-blue">
+              Sign Up
+            </Link>
+          </p>
         </form>
       </div>
     </div>

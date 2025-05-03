@@ -5,7 +5,7 @@ import DashboardHome from "./pages/dashboard/dashboardHome";
 import LoginAs from "./pages/auth/loginAs";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
-import { DoctorForm } from "./components/auth/patientAndDoctor";
+import DashboardLayout from "./layout/dashboard";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +15,16 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    Component: DashboardLayout,
+    children: [
+      {
+        index: true,
+        Component: DashboardHome,
       },
     ],
   },
@@ -32,10 +42,6 @@ const router = createBrowserRouter([
       {
         path: "register",
         Component: Register,
-      },
-      {
-        path: "doctorForm",
-        Component: DoctorForm,
       },
     ],
   },
