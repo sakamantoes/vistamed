@@ -8,6 +8,7 @@ import Register from "./pages/auth/register";
 import DashboardLayout from "./layout/dashboard";
 import AboutPage from "./pages/APT/aboutPage";
 import Privacy from "./pages/APT/privacy";
+import TermsCondition from "./pages/APT/termsCondition";
 
 const router = createBrowserRouter([
   {
