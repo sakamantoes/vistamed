@@ -6,6 +6,8 @@ import LoginAs from "./pages/auth/loginAs";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
 import DashboardLayout from "./layout/dashboard";
+import AboutPage from "./pages/APT/aboutPage";
+import Privacy from "./pages/APT/privacy";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,23 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: DashboardHome,
+      },
+    ],
+  },
+  {
+    path: "/aboutPage",
+    children: [
+      {
+        index: true,
+        Component: AboutPage,
+      },
+      {
+        path: "privacy",
+        Component: Privacy,
+      },
+      {
+        path: "T&C",
+        Component: TermsCondition,
       },
     ],
   },

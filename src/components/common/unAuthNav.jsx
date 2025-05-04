@@ -43,7 +43,7 @@ const NavBar = [
     title: "Benefits",
   },
   {
-    to: "/contacts",
+    to: "/aboutPage",
     title: "Contact",
   },
 ];

@@ -98,7 +98,7 @@ function Appointment() {
                   </div>
                 </div>
                 <div className="h-[3px] bg-white w-full rounded-md hidden md:block"></div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center flex-col ml-1 md:flex-row  gap-2">
                   <button className="bg-white rounded-2xl px-2 md:px-3 py-1 font-semibold cursor-pointer ">
                     Reschedule
                   </button>
@@ -450,7 +450,7 @@ function Appointment() {
         </div>
 
         <div className="flex items-center justify-center m-7">
-          <div className="bg-gray-300 p-3 border border-gray-400 rounded-3xl">
+          <div className="bg-gray-300 p-2 md:p-3 border border-gray-400 rounded-3xl">
             <div className="flex text-primary-blue items-center text-3xl mb-1.5 font-semibold">
               <span>
                 <svg
@@ -490,7 +490,7 @@ function Appointment() {
               You may be at mild risk of Type 2 Diabetes based <br /> on your
               recent trends in your glucose levels and family History
             </div>
-            <div className="flex items-center justify-evenly m-2">
+            <div className="flex md:flex-row flex-col w-[100%] gap-2.5  items-center justify-evenly m-2">
               <button className="bg-primary-blue px-5 py-2 font-bold text-white rounded-2xl ">
                 See Risk Factors
               </button>

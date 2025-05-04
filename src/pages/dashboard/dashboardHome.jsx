@@ -3,6 +3,7 @@ import Welcome from "../../components/dashboard/landing/welcome";
 import Appointment from "../../components/dashboard/landing/appointment";
 import HealthMetrics from "../../components/dashboard/landing/healthMetrics";
 import Records from "../../components/dashboard/landing/records";
+import Consultants from "../../components/dashboard/landing/consultants";
 
 function DashboardHome() {
   return (
@@ -13,6 +14,7 @@ function DashboardHome() {
           <Appointment />
           <HealthMetrics />
           <Records />
+          <Consultants />
         </div>
       </div>
     </div>
