@@ -37,9 +37,12 @@ export function Patient() {
             </Link>
           </div>
 
-          <button className="text-center bg-primary-blue text-white py-2 px-6 cursor-pointer flex items-center justify-center mx-auto mb-4">
-            Login
-          </button>
+          <Link to="/dashboard">
+            {" "}
+            <button className="text-center bg-primary-blue text-white py-2 px-6 cursor-pointer flex items-center justify-center mx-auto mb-4">
+              Login
+            </button>
+          </Link>
 
           <div className="flex justify-between items-center gap-9">
             <div className="bg-gray-300 cursor-pointer flex h-[37px] justify-center items-center gap-1 px-1">
@@ -131,10 +134,6 @@ export function Doctor() {
               <input type="checkbox" />
               <p>Agree to terms and condition.</p>
             </div>
-
-            <Link to="/auth/doctorForm">
-              <p className="text-blue-600">Create an account here</p>
-            </Link>
           </div>
           <button className="text-center bg-primary-blue text-white py-2 px-8 cursor-pointer mb-4 flex items-center justify-center mx-auto">
             Login
