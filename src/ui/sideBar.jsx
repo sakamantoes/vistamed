@@ -1,9 +1,20 @@
 import React from "react";
+import classNames from "classnames"; // optional utility for class toggling
 
-function SideBar({ closeSidebar }) {
+function SideBar({ isOpen, onClose }) {
   return (
-    <div className="bg-primary-blue hidden md:block w-[400px] h-screen p-3 text-white overflow-y-auto flex-col">
-      <div onClick={closeSidebar} className="cursor-pointer w-fit">
+    <div
+      className={classNames(
+        "bg-primary-blue w-[300px] h-[800px] p-3 text-white overflow-y-auto flex-col z-50 transition-transform duration-300 fixed top-0 left-0",
+        {
+          "translate-x-0": isOpen,
+          "-translate-x-full": !isOpen,
+          "md:translate-x-0 md:relative md:block": true,
+        }
+      )}
+    >
+      {/* Arrow to close */}
+      <div className="md:hidden cursor-pointer mb-4" onClick={onClose}>
         <svg
           width="20"
           height="30"
@@ -20,13 +31,15 @@ function SideBar({ closeSidebar }) {
           />
         </svg>
       </div>
-      {/* profile side */}
-      <div className=" flex items-center justify-center flex-col">
+
+      {/* Profile Info */}
+      <div className="flex items-center justify-center flex-col">
         <div className="w-[150px] h-[150px] rounded-full bg-white mb-3"></div>
         <h1 className="font-bold text-[23px] leading-5">Paschal</h1>
         <p className="text-[15px] font-semibold text-gray-300">Patient</p>
       </div>
 
+      {/* Menu Items */}
       <div className="pl-2 mt-3">
         <p className="p-3 font-bold">Dashboard</p>
         <ul className="flex justify-center flex-col gap-4">

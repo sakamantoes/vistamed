@@ -3,16 +3,16 @@ import SideBar from "../../ui/sideBar";
 import Bookingpage from "../../ui/bookingpage";
 
 function BookAppointment() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setSidebarOpen((prev) => !prev);
+    setIsSidebarOpen((prev) => !prev);
   };
 
   return (
-    <div className="flex">
-      {sidebarOpen && <SideBar closeSidebar={toggleSidebar} />}
-      <Bookingpage openSidebar={toggleSidebar} />
+    <div className="flex relative">
+      <SideBar isOpen={isSidebarOpen} onClose={toggleSidebar} />
+      <Bookingpage onMenuClick={toggleSidebar} />
     </div>
   );
 }
