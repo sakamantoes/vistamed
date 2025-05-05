@@ -9,6 +9,7 @@ import DashboardLayout from "./layout/dashboard";
 import AboutPage from "./pages/APT/aboutPage";
 import Privacy from "./pages/APT/privacy";
 import TermsCondition from "./pages/APT/termsCondition";
+import BookAppointment from "./pages/bookAppointment/bookAppointment";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,15 @@ const router = createBrowserRouter([
       {
         path: "T&C",
         Component: TermsCondition,
+      },
+    ],
+  },
+  {
+    path: "/book-Appointment",
+    children: [
+      {
+        index: true,
+        Component: BookAppointment,
       },
     ],
   },
