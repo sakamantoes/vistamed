@@ -2,7 +2,7 @@ import React from "react";
 
 function Privacy() {
   return (
-    <div className="">
+    <div className="pt-[65px]">
       <div className="md:w-[800px] w-[390px] mx-auto px-1">
         <nav className="flex items-center md:gap-30 ">
           <img src="/img/logo.png" alt="" className="w-[200px]" />

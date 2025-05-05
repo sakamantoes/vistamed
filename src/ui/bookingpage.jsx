@@ -2,8 +2,8 @@ import React from "react";
 
 function Bookingpage({ onMenuClick }) {
   return (
-    <div className="bg-white w-full p-3 h-screen">
-      <div className="flex items-center justify-between">
+    <div className="bg-white w-full p-5 h-screen">
+      <div className="flex items-center justify-between ">
         <h1 className="text-3xl font-semibold">Book Appointment</h1>
         <div className="flex gap-3 items-center">
           {/* Menu icon (3 bars) */}
@@ -92,24 +92,42 @@ function Bookingpage({ onMenuClick }) {
           </span>
         </div>
         <div className="h-[2px] w-[300px] md:w-[400px] my-2 bg-gray-300"></div>
-        <div className="md:w-[490px] w-[400px] bg-gray-300 h-[200px] flex items-center justify-center">
+        <div className="md:w-[490px] w-[350px] bg-gray-300 h-[200px] flex items-center justify-center">
           {/*  */}
           calender
         </div>
       </div>
 
-      <div className="w-[400px] md:w-[500px] py-3 flex gap-3.5 justify-evenly m-5  mx-auto flex-wrap">
-        <button className="border-gray-400 border-2 py-0.5 px-6">
+      <div className="w-[300px] md:w-[500px] py-3 grid md:grid-cols-3 grid-cols-2 md:gap-3.5 gap-1.5 justify-evenly m-5  mx-auto flex-wrap">
+        <button className="border-gray-400 border-2 py-0.5 md:px-6 px-2">
           8:30 AM
         </button>
-        <button className="border-gray-400 border-2 py-0.5 px-6">
+        <button className="border-gray-400 border-2 py-0.5 md:px-6 px-2">
           9:30 AM
         </button>
-        <button className="border-gray-400 border-2 py-0.5 px-6">
+        <button className="border-gray-400 border-2 py-0.5 md:px-6 px-2">
           11:30 AM
         </button>
-        <button className="border-gray-400 border-2 py-0.5 px-6">
+        <button className="border-gray-400 border-2 py-0.5 md:px-6 px-2">
           2:30 PM
+        </button>
+      </div>
+
+      <div className="pl-4 flex gap-2.5 flex-col">
+        <p>
+          <strong className="text-[17px]">Doctor:</strong> Not Select
+        </p>
+        <p>
+          <strong className="text-[17px]">Date:</strong> Not Select
+        </p>
+        <p>
+          <strong className="text-[17px]">Time:</strong> Not Select
+        </p>
+      </div>
+
+      <div className="flex items-center justify-center my-2">
+        <button className="bg-primary-blue text-white font-bold py-1 px-6 rounded-2xl">
+          Confirm Booking
         </button>
       </div>
     </div>

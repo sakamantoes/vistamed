@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function Footer() {
   return (
-    <footer className=" relative mt-9 bg-gray-400 w-full md:w-full py-8 text-gray-600">
+    <footer className=" relative mt-9 bg-gray-100 w-full md:w-full py-8 text-gray-600">
       <div className="flex flex-col justify-center items-center">
         <div className="flex items-center flex-col  md:flex-row">
           <div className="">
@@ -56,9 +56,9 @@ function Footer() {
         </div>
 
         <div className="flex flex-col px-20 items-center">
-          <div className="flex items-center flex-col md:flex-row gap-5 justify-between">
-            <p>condition to use</p>
-            <p>Privacy Notice</p>
+          <div className="flex items-center flex-col md:flex-row gap-5 justify-between capitalize  text-[14px]">
+            <a href="/terms-condition">condition to use</a>
+            <a href="/privacy">Privacy Notice</a>
             <p>Consumer Health</p>
             <p>Data privacy</p>
             <p>Disclosure</p>
@@ -68,7 +68,7 @@ function Footer() {
           <p>{new Date().getFullYear()} MEDVISTA</p>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden flex items-end justify-center text-[17px] md:text-2xl bg-white mt-4">
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden flex items-end justify-center text-[13px] bg-white mt-4">
         @ MEDIVISTA. Care Beyond Boundaries<sup className="text-[12px]">TM</sup>
       </div>
     </footer>

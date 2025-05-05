@@ -4,15 +4,17 @@ function Appointment() {
   return (
     <>
       <div className="">
-        <div className="relative mx-auto px-1 md:px-[5px] bg-white py-[3px] md:w-[900px] sm:w-[500px] my-3">
-          <div className=" md:w-[800px] sm:w-[400px]  flex-col mx-auto my-6">
+        <div className="relative mx-auto px-1 md:px-[5px] bg-white py-[3px] lg:w-[900px] w-full my-3">
+          <div className="flex-col mx-auto my-6 w-full">
             <div className="flex items-center justify-between mb-5">
               <h2 className="font-semibold text-[19px]">Upcoming Appoinment</h2>
 
-              <p className="text-rose-500">veiw more</p>
+              <p className="text-rose-500 hover:bg-rose-400/30 px-2 rounded-md py-1 cursor-pointer">
+                view more
+              </p>
             </div>
 
-            <div className="mx-auto bg-primary-blue rounded-md p-5 flex items-center justify-between">
+            <div className="w-full mx-auto bg-primary-blue rounded-md p-5 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-red-300 overflow-hidden">
                   <img src="/img/user2.png" alt="" className="object-cover" />
@@ -97,7 +99,7 @@ function Appointment() {
                     Medvister hospital, 18 lekki layout Lagos
                   </div>
                 </div>
-                <div className="h-[3px] bg-white w-full rounded-md hidden md:block"></div>
+                <div className="h-[1px] bg-white/20 w-full rounded-md hidden md:block"></div>
                 <div className="flex items-center flex-col ml-1 md:flex-row  gap-2">
                   <button className="bg-white rounded-2xl px-2 md:px-3 py-1 font-semibold cursor-pointer ">
                     Reschedule
@@ -161,9 +163,9 @@ function Appointment() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-9">
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-9">
-            <div className="md:w-[200px] w-[300px]  sm:w-[180px] h-[240px] rounded-md flex justify-center items-center flex-col bg-white">
+        <div className="flex flex-col md:flex-row items-start justify-center gap-3 w-full">
+          <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+            <div className="sm:w-fit w-full px-5 py-2 rounded-md flex justify-center items-center flex-col bg-white">
               <div className="flex gap-1.5">
                 <div className="">
                   <svg
@@ -189,7 +191,7 @@ function Appointment() {
             </div>
 
             {/*  */}
-            <div className="md:w-[200px] w-[300px]  sm:w-[180px] h-[240px] rounded-md flex justify-center items-center flex-col bg-white autoDisplay">
+            <div className="sm:w-fit w-full px-5 py-2 rounded-md flex justify-center items-center flex-col bg-white autoDisplay">
               <div className="">
                 <div className=""></div>
                 <div className="">
@@ -219,7 +221,7 @@ function Appointment() {
             </div>
 
             {/*  */}
-            <div className="md:w-[200px] w-[300px] sm:w-[180px] h-[240px] rounded-md flex justify-center items-center flex-col bg-white autoDisplay">
+            <div className=" sm:w-fit w-full px-5 py-2 rounded-md flex justify-center items-center flex-col bg-white autoDisplay">
               <div className="">
                 <div className=""></div>
                 <div className="">
@@ -250,47 +252,48 @@ function Appointment() {
             </div>
           </div>
 
-          <div className="md:w-[300px] w-[300px]  sm:w-[260px] h-[300px] p-2 bg-white">
-            <div className="w-9 flex items-center justify-center h-9  rounded-full bg-gray-100 autoDisplay">
-              <span>
-                <svg
-                  width="12"
-                  height="33"
-                  viewBox="0 0 12 33"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M6.28711 6.18016C6.61863 6.18016 6.93657 5.97334 7.17099 5.60519C7.40541 5.23705 7.53711 4.73773 7.53711 4.2171C7.53711 3.69646 7.40541 3.19715 7.17099 2.82901C6.93657 2.46086 6.61863 2.25404 6.28711 2.25404C5.95559 2.25404 5.63765 2.46086 5.40323 2.82901C5.16881 3.19715 5.03711 3.69646 5.03711 4.2171C5.03711 4.73773 5.16881 5.23705 5.40323 5.60519C5.63765 5.97334 5.95559 6.18016 6.28711 6.18016ZM6.28711 7.7506C6.88385 7.7506 7.45614 7.37832 7.8781 6.71566C8.30006 6.053 8.53711 5.15424 8.53711 4.2171C8.53711 3.27995 8.30006 2.38119 7.8781 1.71853C7.45614 1.05587 6.88385 0.683594 6.28711 0.683594C5.69037 0.683594 5.11808 1.05587 4.69612 1.71853C4.27416 2.38119 4.03711 3.27995 4.03711 4.2171C4.03711 5.15424 4.27416 6.053 4.69612 6.71566C5.11808 7.37832 5.69037 7.7506 6.28711 7.7506ZM4.07711 9.56133C4.30074 9.40541 4.54244 9.32361 4.78711 9.32105H5.78711C6.07261 9.32105 6.30061 9.44983 6.36211 9.48516L6.36661 9.48673C6.46661 9.54327 6.55911 9.60923 6.63561 9.66733C6.79211 9.78747 6.96261 9.93981 7.13761 10.1133C7.57262 10.5499 7.98521 11.0393 8.37161 11.577C9.26061 12.8051 10.3136 14.6645 10.9296 17.0838C11.3216 18.6212 11.2936 20.1045 10.9296 21.3962C10.5886 22.6039 10.0116 23.4401 9.52061 23.9851C7.99561 25.6765 7.92411 26.7758 7.53611 29.8224C7.52176 30.4393 7.3538 31.0227 7.06837 31.4471C6.78294 31.8715 6.40285 32.1029 6.00985 32.0917C5.61686 32.0805 5.24237 31.8275 4.96695 31.3871C4.69153 30.9467 4.53718 30.3541 4.53711 29.7369C4.53711 25.7063 4.53611 23.3082 4.42011 21.0405C4.10493 21.4009 3.71277 21.5545 3.32673 21.4686C2.9407 21.3827 2.59114 21.0641 2.35211 20.5804C2.08904 20.024 1.83626 19.4558 1.59411 18.8764C1.44015 18.5141 1.29342 18.1444 1.15411 17.7677C1.08565 17.5816 1.02275 17.3906 0.965609 17.1953C0.937109 17.0955 0.900609 16.9597 0.869609 16.8034C0.815903 16.5423 0.788078 16.2698 0.787109 15.9954C0.787109 15.4332 0.917109 14.9966 0.946109 14.9016V14.8993L0.947609 14.8961C0.994609 14.7344 1.04761 14.5899 1.08961 14.48C1.17611 14.2554 1.28311 14.0096 1.39261 13.7733C1.65173 13.2175 1.92461 12.6779 2.21061 12.1557C2.51061 11.6061 2.85011 11.0273 3.16761 10.5664C3.32311 10.3403 3.50661 10.0953 3.70011 9.89112C3.79711 9.78826 3.92511 9.66576 4.07711 9.56133ZM4.78711 10.8915C4.41961 10.8915 4.09961 11.3516 3.84611 11.7199C3.56861 12.1227 3.25761 12.6512 2.97011 13.1781C2.70185 13.6674 2.44582 14.1729 2.20261 14.6935C2.07661 14.9668 1.94561 15.2463 1.85561 15.5534C1.81269 15.6912 1.78932 15.842 1.78711 15.9954C1.78711 16.3543 1.91411 16.6888 2.02311 16.9903C2.13461 17.2973 2.28111 17.6609 2.42861 18.0111C2.65686 18.557 2.89479 19.0927 3.14211 19.6177C3.22398 19.7795 3.34318 19.8841 3.47386 19.9088C3.60453 19.9335 3.73614 19.8763 3.84012 19.7496C3.9441 19.6229 4.01208 19.4369 4.0293 19.232C4.04652 19.0271 4.0116 18.8197 3.93211 18.655C3.60111 17.9492 3.28754 17.2236 2.99211 16.4799L2.81911 16.0331L3.01461 15.6099C3.2962 15.0074 3.59604 14.4264 3.91311 13.8691L4.58211 12.6881L4.77711 14.2381C5.53311 20.2419 5.53711 22.2168 5.53711 29.7369C5.53711 29.9451 5.58979 30.1448 5.68356 30.2921C5.77732 30.4394 5.9045 30.5221 6.03711 30.5221C6.34761 30.5221 6.53711 30.113 6.53711 29.6591C6.94511 26.4554 7.18461 24.6533 8.94361 22.702C9.35111 22.2505 9.77361 21.6145 10.0151 20.7594C10.2641 19.8768 10.2986 18.834 10.0011 17.6672C9.46261 15.5518 8.52811 13.8848 7.71111 12.7556C7.36459 12.2732 6.99463 11.834 6.60461 11.4419C6.42211 11.2613 6.23211 11.0807 6.02861 10.9653C5.95142 10.919 5.86972 10.894 5.78711 10.8915H4.78711Z"
-                    fill="#667185"
-                  />
-                </svg>
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 my-5">
-              <div className="bg-green-300 text-center px-1.5 rounded-md cursor-pointer">
-                in progress
-              </div>
-              <div className="flex items-center rounded-md  px-3.5 text-center bg-gray-200 cursor-pointer">
-                {" "}
+          <div className="md:w-[300px] w-full  sm:w-[260px] p-2 bg-white">
+            <div className="flex items-center gap-2">
+              <div className="w-9 flex items-center justify-center h-9  rounded-full bg-gray-100 autoDisplay">
                 <span>
                   <svg
                     width="12"
-                    height="12"
-                    viewBox="0 0 13 14"
+                    height="33"
+                    viewBox="0 0 12 33"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M7.98669 4.48352L8.65105 5.14796L2.1086 11.6913H1.44425V11.0269L7.98669 4.48352ZM10.5863 0.135742C10.4058 0.135742 10.2181 0.207964 10.0809 0.345187L8.75937 1.66685L11.4673 4.37519L12.7888 3.05352C12.8558 2.9867 12.9089 2.90734 12.9451 2.81997C12.9813 2.7326 13 2.63894 13 2.54435C13 2.44976 12.9813 2.35611 12.9451 2.26874C12.9089 2.18137 12.8558 2.102 12.7888 2.03519L11.099 0.345187C10.9546 0.200742 10.7741 0.135742 10.5863 0.135742ZM7.98669 2.43963L0 10.4274V13.1357H2.70797L10.6947 5.14796L7.98669 2.43963Z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.28711 6.18016C6.61863 6.18016 6.93657 5.97334 7.17099 5.60519C7.40541 5.23705 7.53711 4.73773 7.53711 4.2171C7.53711 3.69646 7.40541 3.19715 7.17099 2.82901C6.93657 2.46086 6.61863 2.25404 6.28711 2.25404C5.95559 2.25404 5.63765 2.46086 5.40323 2.82901C5.16881 3.19715 5.03711 3.69646 5.03711 4.2171C5.03711 4.73773 5.16881 5.23705 5.40323 5.60519C5.63765 5.97334 5.95559 6.18016 6.28711 6.18016ZM6.28711 7.7506C6.88385 7.7506 7.45614 7.37832 7.8781 6.71566C8.30006 6.053 8.53711 5.15424 8.53711 4.2171C8.53711 3.27995 8.30006 2.38119 7.8781 1.71853C7.45614 1.05587 6.88385 0.683594 6.28711 0.683594C5.69037 0.683594 5.11808 1.05587 4.69612 1.71853C4.27416 2.38119 4.03711 3.27995 4.03711 4.2171C4.03711 5.15424 4.27416 6.053 4.69612 6.71566C5.11808 7.37832 5.69037 7.7506 6.28711 7.7506ZM4.07711 9.56133C4.30074 9.40541 4.54244 9.32361 4.78711 9.32105H5.78711C6.07261 9.32105 6.30061 9.44983 6.36211 9.48516L6.36661 9.48673C6.46661 9.54327 6.55911 9.60923 6.63561 9.66733C6.79211 9.78747 6.96261 9.93981 7.13761 10.1133C7.57262 10.5499 7.98521 11.0393 8.37161 11.577C9.26061 12.8051 10.3136 14.6645 10.9296 17.0838C11.3216 18.6212 11.2936 20.1045 10.9296 21.3962C10.5886 22.6039 10.0116 23.4401 9.52061 23.9851C7.99561 25.6765 7.92411 26.7758 7.53611 29.8224C7.52176 30.4393 7.3538 31.0227 7.06837 31.4471C6.78294 31.8715 6.40285 32.1029 6.00985 32.0917C5.61686 32.0805 5.24237 31.8275 4.96695 31.3871C4.69153 30.9467 4.53718 30.3541 4.53711 29.7369C4.53711 25.7063 4.53611 23.3082 4.42011 21.0405C4.10493 21.4009 3.71277 21.5545 3.32673 21.4686C2.9407 21.3827 2.59114 21.0641 2.35211 20.5804C2.08904 20.024 1.83626 19.4558 1.59411 18.8764C1.44015 18.5141 1.29342 18.1444 1.15411 17.7677C1.08565 17.5816 1.02275 17.3906 0.965609 17.1953C0.937109 17.0955 0.900609 16.9597 0.869609 16.8034C0.815903 16.5423 0.788078 16.2698 0.787109 15.9954C0.787109 15.4332 0.917109 14.9966 0.946109 14.9016V14.8993L0.947609 14.8961C0.994609 14.7344 1.04761 14.5899 1.08961 14.48C1.17611 14.2554 1.28311 14.0096 1.39261 13.7733C1.65173 13.2175 1.92461 12.6779 2.21061 12.1557C2.51061 11.6061 2.85011 11.0273 3.16761 10.5664C3.32311 10.3403 3.50661 10.0953 3.70011 9.89112C3.79711 9.78826 3.92511 9.66576 4.07711 9.56133ZM4.78711 10.8915C4.41961 10.8915 4.09961 11.3516 3.84611 11.7199C3.56861 12.1227 3.25761 12.6512 2.97011 13.1781C2.70185 13.6674 2.44582 14.1729 2.20261 14.6935C2.07661 14.9668 1.94561 15.2463 1.85561 15.5534C1.81269 15.6912 1.78932 15.842 1.78711 15.9954C1.78711 16.3543 1.91411 16.6888 2.02311 16.9903C2.13461 17.2973 2.28111 17.6609 2.42861 18.0111C2.65686 18.557 2.89479 19.0927 3.14211 19.6177C3.22398 19.7795 3.34318 19.8841 3.47386 19.9088C3.60453 19.9335 3.73614 19.8763 3.84012 19.7496C3.9441 19.6229 4.01208 19.4369 4.0293 19.232C4.04652 19.0271 4.0116 18.8197 3.93211 18.655C3.60111 17.9492 3.28754 17.2236 2.99211 16.4799L2.81911 16.0331L3.01461 15.6099C3.2962 15.0074 3.59604 14.4264 3.91311 13.8691L4.58211 12.6881L4.77711 14.2381C5.53311 20.2419 5.53711 22.2168 5.53711 29.7369C5.53711 29.9451 5.58979 30.1448 5.68356 30.2921C5.77732 30.4394 5.9045 30.5221 6.03711 30.5221C6.34761 30.5221 6.53711 30.113 6.53711 29.6591C6.94511 26.4554 7.18461 24.6533 8.94361 22.702C9.35111 22.2505 9.77361 21.6145 10.0151 20.7594C10.2641 19.8768 10.2986 18.834 10.0011 17.6672C9.46261 15.5518 8.52811 13.8848 7.71111 12.7556C7.36459 12.2732 6.99463 11.834 6.60461 11.4419C6.42211 11.2613 6.23211 11.0807 6.02861 10.9653C5.95142 10.919 5.86972 10.894 5.78711 10.8915H4.78711Z"
                       fill="#667185"
                     />
                   </svg>
                 </span>
-                Edit{" "}
+              </div>
+              <div className="flex items-center gap-2 my-5">
+                <div className="bg-green-300 text-center px-1.5 rounded-md cursor-pointer">
+                  in progress
+                </div>
+                <div className="flex items-center rounded-md  px-3.5 text-center bg-gray-200 cursor-pointer">
+                  {" "}
+                  <span>
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 13 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.98669 4.48352L8.65105 5.14796L2.1086 11.6913H1.44425V11.0269L7.98669 4.48352ZM10.5863 0.135742C10.4058 0.135742 10.2181 0.207964 10.0809 0.345187L8.75937 1.66685L11.4673 4.37519L12.7888 3.05352C12.8558 2.9867 12.9089 2.90734 12.9451 2.81997C12.9813 2.7326 13 2.63894 13 2.54435C13 2.44976 12.9813 2.35611 12.9451 2.26874C12.9089 2.18137 12.8558 2.102 12.7888 2.03519L11.099 0.345187C10.9546 0.200742 10.7741 0.135742 10.5863 0.135742ZM7.98669 2.43963L0 10.4274V13.1357H2.70797L10.6947 5.14796L7.98669 2.43963Z"
+                        fill="#667185"
+                      />
+                    </svg>
+                  </span>
+                  Edit{" "}
+                </div>
               </div>
             </div>
 
@@ -449,8 +452,8 @@ function Appointment() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center m-7">
-          <div className="bg-gray-300 p-2 md:p-3 border border-gray-400 rounded-3xl">
+        <div className="flex items-center justify-center my-5">
+          <div className="bg-gray-200 lg:w-[900px] w-full p-2 md:p-3 border border-gray-400 rounded-3xl">
             <div className="flex text-primary-blue items-center text-3xl mb-1.5 font-semibold">
               <span>
                 <svg
@@ -485,19 +488,21 @@ function Appointment() {
               </span>
               AI Health Predictor
             </div>
-            <div className="bg-white border p-4 border-gray-400 rounded-3xl text-[25px] tracking-wide ">
+            <div className="bg-white border p-4 border-gray-400 rounded-lg text-[15px] tracking-wide ">
               <strong>Mind Risk Alert: </strong>
-              You may be at mild risk of Type 2 Diabetes based <br /> on your
-              recent trends in your glucose levels and family History
+              <span className="text-[#5f5d5d]">
+                You may be at mild risk of Type 2 Diabetes based on your recent
+                trends in your glucose levels and family History
+              </span>
             </div>
-            <div className="flex md:flex-row flex-col w-[100%] gap-2.5  items-center justify-evenly m-2">
-              <button className="bg-primary-blue px-5 py-2 font-bold text-white rounded-2xl ">
+            <div className="flex sm:flex-row flex-col w-[100%] gap-2.5  items-center justify-evenly my-3">
+              <button className="bg-primary-blue px-5 py-2 w-full font-bold text-white rounded-2xl ">
                 See Risk Factors
               </button>
-              <button className="bg-green-600 -blue px-5 py-2 font-bold text-white rounded-2xl">
+              <button className="bg-green-600 -blue px-5 py-2 w-full font-bold text-white rounded-2xl">
                 View Recommendation
               </button>
-              <button className="bg-sec-blue -blue px-5 py-2 font-bold text-white rounded-2xl">
+              <button className="bg-sec-blue -blue px-5 py-2 w-full font-bold text-white rounded-2xl">
                 Talk to a Doctor
               </button>
             </div>

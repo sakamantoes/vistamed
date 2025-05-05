@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router";
-import Footer from "../../components/common/footer";
+import Footer from "./src/components/common/footer";
+import UnAuthNav from "./src/components/common/unAuthNav";
 
 function LoginAs() {
   return (
     <>
-      <div className=" flex items-center justify-center flex-col">
+      <UnAuthNav />
+      <div className="pt-[65px] flex items-center justify-center flex-col">
         <img
           src="/img/logo.png"
           alt="logo"

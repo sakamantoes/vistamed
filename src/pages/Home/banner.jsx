@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function Banner() {
   return (
-    <div className="flex bg-primary-blue rounded-lg px-6 sm:px-10 md:px-14 lg:px-12 my-20 md:mx-10 -z-10">
+    <div className="flex bg-primary-blue rounded-lg px-6 sm:px-10 md:px-14 lg:px-12 mx-2 py-5 my-20 md:mx-10 -z-10">
       {/* left side */}
       <div className="flex-1 py-0 sm:py-10 md:py-16 lg:py24 lg:pl-5 text-center">
         <div className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-white">

@@ -2,12 +2,11 @@ import React from "react";
 
 function AboutPage() {
   return (
-    <div className="md:w-[800px] w-[390px] mx-auto">
-      <nav className="flex items-center md:gap-30 ">
-        <img src="/img/logo.png" alt="" className="w-[200px]" />
+    <div className="md:w-[800px] w-[390px] mx-auto pt-[65px]">
+      <nav className=" text-center ">
         <h1 className="text-3xl text-primary-blue font-bold">About Us</h1>
       </nav>
-      <div className="text-2xl text-center">
+      <div className="text-lg mt-4 text-center">
         At MEDIVISTA, we envision a future where healthcare is seamlessly
         connected, intelligent, and proactive. Born from a desire to bridge the
         gap between fragmented patient records and predictive care, MEDIVISTA

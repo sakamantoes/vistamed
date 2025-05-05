@@ -5,7 +5,7 @@ function SideBar({ isOpen, onClose }) {
   return (
     <div
       className={classNames(
-        "bg-primary-blue w-[300px] h-[800px] p-3 text-white overflow-y-auto flex-col z-50 transition-transform duration-300 fixed top-0 left-0",
+        "bg-primary-blue w-[300px] h-[890px] p-3 text-white overflow-y-auto flex-col z-50 transition-transform duration-300 fixed top-0 left-0",
         {
           "translate-x-0": isOpen,
           "-translate-x-full": !isOpen,

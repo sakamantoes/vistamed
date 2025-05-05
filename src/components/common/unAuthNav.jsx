@@ -53,13 +53,13 @@ function UnAuthNav() {
 
   return (
     <div className="h-[60px] fixed w-full bg-white backdrop-blur-md  mx-auto flex items-center justify-between md:px-10 px-4 overflow-hidde z-[40]">
-      <div className="">
+      <Link to={"/"} className="">
         <img
           src="/img/logo.png"
           alt="logo"
           className="xs:w-30 w-28 translate-x-[-30px] object-cover"
         />
-      </div>
+      </Link>
 
       <ul className="sm:flex gap-10 items-center hidden">
         {NavBar.map(({ to, title, isDropDown }, i) =>

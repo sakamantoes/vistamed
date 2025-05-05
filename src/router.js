@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Home from "./pages/Home";
 import { DefaultLayout } from "./layout/default";
 import DashboardHome from "./pages/dashboard/dashboardHome";
-import LoginAs from "./pages/auth/loginAs";
+import LoginAs from "../loginAs";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
 import DashboardLayout from "./layout/dashboard";
@@ -20,6 +20,18 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
       },
+      {
+        path: "about",
+        Component: AboutPage,
+      },
+      {
+        path: "privacy",
+        Component: Privacy,
+      },
+      {
+        path: "terms-condition",
+        Component: TermsCondition,
+      },
     ],
   },
   {
@@ -29,23 +41,6 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: DashboardHome,
-      },
-    ],
-  },
-  {
-    path: "/aboutPage",
-    children: [
-      {
-        index: true,
-        Component: AboutPage,
-      },
-      {
-        path: "privacy",
-        Component: Privacy,
-      },
-      {
-        path: "T&C",
-        Component: TermsCondition,
       },
     ],
   },
